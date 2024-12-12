@@ -1,0 +1,10 @@
+grep -o 'Quijote' el_quijote.txt | wc -l // cuanta cuantas veces aparece Quijote en el texto 
+grep -vc 'quijote' el_quijote.txt // te cuenta los huecos vacios eso significa la v y la c te la cuenta 
+grep -r -o -i 'quijote' DonEjercicio | wc -l // cuenta las veces que aparece el quijote en todo
+grep -l -i  'quijote' DonEjercicio | wc -l // en que archivos no aparece el quijote 
+sed 's/panza/barriga/g' el_quijote.txt // cambio las palabras de panza a barriga
+sed -i 's/panza/barriga/g' el_quijote.txt
+head -c 4 el_quijote.txt >> el_quijote
+head -c 4000 el_quijote.txt >> el_quijote
+sed -n '14,25p' el_quijote.txt
+sort -f el_quijote.txt | sort -r
